@@ -16,7 +16,7 @@ async def start_message(client, message):
     await client.send_message(
         chat_id=message.chat.id,
         text=Translation.START_TEXT,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Nexon Projects ❤", url="https://t.me/NexonHex")]]),
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕ Join our Channel ⭕", url="https://t.me/NexonHex")]]),
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=message.message_id,
@@ -39,7 +39,7 @@ async def start_message(client, message):
     await client.send_message(
         chat_id=message.chat.id,
         text=Translation.ABOUT_TEXT,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Nexon Projects ❤", url="https://t.me/NexonHex")]]),
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕ Join Our Channel ⭕", url="https://t.me/NexonHex")]]),
         parse_mode="html",
         disable_web_page_preview=True,         
         reply_to_message_id=message.message_id,
