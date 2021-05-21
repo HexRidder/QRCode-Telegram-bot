@@ -5,7 +5,7 @@ from messages import Msg
 async def start_message(client, message):
     await client.send_message(
         chat_id=message.chat.id,
-        text=Translation.start_msg",
+        text=Translation.START_TEXT,
         reply_to_message_id=message.message_id,
     )
 
@@ -13,6 +13,14 @@ async def start_message(client, message):
 async def help_message(client, message):
     await client.send_message(  
         chat_id=message.chat.id,
-        text=Translation.help_msg",
+        text=Translation.HELP_TEXT,
+        reply_to_message_id=message.message_id,
+    )
+
+@Client.on_message(filters.command("about"))
+async def start_message(client, message):
+    await client.send_message(
+        chat_id=message.chat.id,
+        text=Translation.ABOUT_TEXT,
         reply_to_message_id=message.message_id,
     )
