@@ -15,7 +15,6 @@ Follow These steps..
 🌀 Send an Image/Sticker and Select Appropriate Option to Scan QRCode.
 
 🌀 Send a Link/Text and Select Appropriate Option to Convert it to QRCode.</b>"""
-
     ABOUT_TEXT = """<b>⭕️My Name : Nexon's QR Code
 
 ⭕️Creater : @NexonHEX
